@@ -1,6 +1,8 @@
 import gym
 env = gym.make('MsPacman-ram-v0')
-observation = env.reset()
-env.render()
-print(observation)
-x=1
+env.reset()
+for i in range(400):
+    actions = env.action_space
+    x = actions.sample()
+    print(x)
+    env.step(x)
